@@ -5,5 +5,6 @@
  ADD requirements.txt /code/
  RUN pip install -r requirements.txt
  ADD . /code/
- RUN python3 djangoproj/manage.py migrate
- RUN python3 djangoproj/manage.py scrape
+ #RUN python3 djangoproj/manage.py migrate
+ #RUN python3 -m nltk.downloader punkt stopwords
+ #RUN python3 djangoproj/manage.py scrape

@@ -10,6 +10,7 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
 
+
 connection = redis.Redis(connection_pool=settings.REDIS_POOL)
 word2vec_model = Word2Vec.load(settings.WORD2VEC_FILE)
 
